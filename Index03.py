@@ -6,6 +6,6 @@ def main(s):
     Returns:
         str: answer
     """
-    s=a 
-    return s[b]
-print(main('code',-1))
+    a=s
+    return a[-1]
+print(main('code'))
