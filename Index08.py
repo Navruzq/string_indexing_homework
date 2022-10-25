@@ -6,17 +6,18 @@ def main(s):
     Returns:
         int: answer
     """
+    ans=0
     if s[0] == '*':
-        ans = 0
-    elif s[1] == '*':
         ans = 1
-    elif s[2] == '*':
-        ans = 2
-    elif s[3] == '*':
-        ans = 3
-    elif s[4] == '*':
-        ans = 4
+    if s[1] == '*':
+        ans = ans+1
+    if s[2] == '*':
+        ans = ans+1
+    if s[3] == '*':
+        ans = ans+1
+    if s[4] == '*':
+        ans = ans+1
     else:
         ans = False
     return ans
-print(main("*4544"))
+print(main("*****"))
